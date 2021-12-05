@@ -4,10 +4,13 @@
 // По нажатию на клавишу в инпуте в список ul должен добавляться элемент li. 
 // Содержимое li - нажатая клавиша.
 
-// document.querySelector('button').addEventListener('click', function (event) {
+// let input = document.querySelector('input');
+
+// input.addEventListener('keydown', function (event) {
+
 //     let li = document.createElement('li');
 //     let ul = document.querySelector('ul');
-//     li.innerText = document.querySelector('input').value;
+//     li.innerText = event.key;
 //     ul.appendChild(li);
 // })
 
@@ -26,7 +29,7 @@
 // document.querySelector('input').addEventListener('keyup', function (event) {
 //     let p = document.createElement('p');
 //     let div = document.querySelector('div');
-//     p.innerText = event.key;
+//     p.innerText = input.value;
 //     div.appendChild(p);
 // })
 
@@ -71,22 +74,11 @@
 //     let sign = document.querySelector('.select').value
 //     let div = document.querySelector('div');
 //     let p = document.createElement('p');
-//     if (sign == '+') {
-//         let answer = Number(numberOne) + Number(numberTwo);
-//         p.innerText = innerText = answer;
-//     } else if (sign == '-') {
-//         let answer = Number(numberOne) - Number(numberTwo);
-//         p.innerText = answer;
-//     } else if (sign == '*') {
-//         let answer = Number(numberOne) * Number(numberTwo);
-//         p.innerText = answer;
-//     } else if (sign == '/') {
-//         let answer = Number(numberOne) / Number(numberTwo);
-//         p.innerText = answer;
-//     } else {
-//         p.innerText = 'Ошибка';
-//     }
+//     let answer = eval(`${numberOne} ${sign} ${numberTwo}`)
+//     p.innerText = answer;
 //     div.appendChild(p);
+//     numberOne.value = '';
+//     numberTwo.value = '';
 
 // })
 
